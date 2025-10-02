@@ -38,7 +38,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-          <div className="text-2xl font-bold text-white p-4">
+            <div className="text-2xl font-bold p-2">
               <span className="text-primary-800">TE</span>
               <span className="text-secondary-500">LAR</span>
             </div>
@@ -59,8 +59,8 @@ export default function Header() {
 
           {/* CTA Button Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+5515991676761" className="pt-2">
-              <Button className="w-full bg-secondary-500 hover:bg-secondary-600 text-white">
+            <a href="tel:+5515991676761" className="pt-1">
+              <Button className="bg-secondary-500 hover:bg-secondary-600 text-white">
                 <Phone className="w-4 h-4 mr-2" />
                 (15) 9 9167-6761
               </Button>
@@ -82,7 +82,7 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="lg:hidden mt-4 pb-4 border-t pt-4">
+          <nav className="lg:hidden mt-4 pb-6 border-t pt-4 animate-slide-down">
             <div className="flex flex-col space-y-4">
               {menuItems.map((item) => (
                 <Link
@@ -94,10 +94,10 @@ export default function Header() {
                   {item.label}
                 </Link>
               ))}
-              <a href="tel:+5515999999999" className="pt-2">
+              <a href="tel:+5515991676761" className="pt-2">
                 <Button className="w-full bg-secondary-500 hover:bg-secondary-600 text-white">
                   <Phone className="w-4 h-4 mr-2" />
-                  (15) 99999-9999
+                  (15) 9 9167-6761
                 </Button>
               </a>
             </div>

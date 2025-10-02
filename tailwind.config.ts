@@ -36,6 +36,20 @@ const config: Config = {
           900: "#7c2d12",
         },
       },
+      keyframes: {
+        "slide-down": {
+          "0%": { opacity: "0", transform: "translateY(-10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "bounce-slow": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(10px)" },
+        },
+      },
+      animation: {
+        "slide-down": "slide-down 0.3s ease-out",
+        "bounce-slow": "bounce-slow 1.5s infinite",
+      },
     },
   },
   plugins: [],

@@ -28,7 +28,7 @@ export default function About() {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-16 sm:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Image */}
@@ -39,16 +39,16 @@ export default function About() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl w-full max-w-md mx-auto lg:max-w-full">
               {/* Placeholder - Substitua pela imagem real */}
               <div className="aspect-square bg-gradient-to-br from-primary-100 to-secondary-100 flex items-center justify-center">
-                <Award className="w-32 h-32 text-primary-600 opacity-30" />
+                <Award className="w-20 h-20 sm:w-32 sm:h-32 text-primary-600 opacity-30" />
               </div>
             </div>
 
             {/* Decorative badge */}
-            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-secondary-500 text-white rounded-2xl p-4 sm:p-6 shadow-xl max-w-[120px] sm:max-w-none">
-              <p className="text-2xl sm:text-4xl font-bold">10+</p>
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-secondary-500 text-white rounded-2xl p-3 sm:p-6 shadow-xl w-[100px] sm:w-auto text-center">
+              <p className="text-xl sm:text-3xl font-bold">10+</p>
               <p className="text-xs sm:text-sm">Anos no mercado</p>
             </div>
           </motion.div>
@@ -60,43 +60,43 @@ export default function About() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            <div className="inline-block bg-primary-100 text-primary-700 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold mb-4">
               Sobre Nós
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Referência em{" "}
               <span className="text-primary-700">Redes de Proteção</span> em
               Sorocaba
             </h2>
 
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed">
               A <strong className="text-primary-700">TELAR SOROCABA</strong> é
               especializada em instalação de redes de proteção, oferecendo
               segurança e tranquilidade para famílias e empresas em toda a
               região de Sorocaba.
             </p>
 
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed">
               Com mais de <strong>10 anos de experiência</strong> no mercado,
               utilizamos apenas materiais certificados e de alta qualidade,
               garantindo a proteção que você e sua família merecem.
             </p>
 
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-4 sm:gap-6">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
                   <div
                     key={index}
-                    className="bg-gradient-to-br from-gray-50 to-primary-50 rounded-xl p-6 border border-gray-100"
+                    className="bg-gradient-to-br from-gray-50 to-primary-50 rounded-xl p-4 sm:p-6 border border-gray-100 text-center sm:text-left"
                   >
-                    <Icon className="w-8 h-8 text-primary-600 mb-3" />
-                    <p className="text-3xl font-bold text-gray-900 mb-1">
+                    <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary-600 mb-2 sm:mb-3 mx-auto sm:mx-0" />
+                    <p className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">
                       {stat.value}
                     </p>
-                    <p className="text-sm text-gray-600">{stat.label}</p>
+                    <p className="text-xs sm:text-sm text-gray-600">{stat.label}</p>
                   </div>
                 );
               })}
@@ -110,19 +110,18 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-20"
+          className="mt-16 sm:mt-20"
         >
           <div className="text-center mb-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4">
               Nossos Valores
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Trabalhamos com compromisso, qualidade e dedicação em cada
-              projeto
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
+              Trabalhamos com compromisso, qualidade e dedicação em cada projeto
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 title: "Qualidade",
@@ -142,15 +141,17 @@ export default function About() {
             ].map((value, index) => (
               <div
                 key={index}
-                className="bg-white border-2 border-gray-100 rounded-xl p-6 hover:border-primary-300 hover:shadow-lg transition-all duration-300"
+                className="bg-white border-2 border-gray-100 rounded-xl p-4 sm:p-6 hover:border-primary-300 hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mb-4">
-                  <div className="w-6 h-6 bg-white rounded" />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mb-3 sm:mb-4 mx-auto sm:mx-0">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 bg-white rounded" />
                 </div>
-                <h4 className="text-xl font-bold text-gray-900 mb-3">
+                <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
                   {value.title}
                 </h4>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-sm sm:text-base text-gray-600">
+                  {value.description}
+                </p>
               </div>
             ))}
           </div>
