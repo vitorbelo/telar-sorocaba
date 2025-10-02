@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Star, Phone, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -99,13 +100,16 @@ export default function Hero() {
             className="relative flex justify-center"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md w-full">
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center p-6 sm:p-8">
-                <img
-                  src="/logo-telar.png"
-                  alt="TELAR SOROCABA - Redes de Proteção"
-                  className="w-full h-full object-contain"
-                />
-              </div>
+            <div className="aspect-[4/3] bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center p-8">
+              <Image 
+                src="/logo-telar.png" 
+                alt="TELAR SOROCABA - Redes de Proteção em Sorocaba" 
+                width={400}
+                height={300}
+                priority
+                className="w-full h-full object-contain"
+              />
+            </div>
 
               {/* Badge */}
               <div className="absolute bottom-4 left-4 right-4 bg-white rounded-xl p-3 sm:p-4 shadow-lg">

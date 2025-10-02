@@ -1,12 +1,17 @@
+import dynamic from 'next/dynamic';
 import Header from "@/components/sections/Header";
 import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Services from "@/components/sections/Services";
-import Portfolio from "@/components/sections/Portfolio";
-import Reviews from "@/components/sections/Reviews";
-import FAQ from "@/components/sections/FAQ";
-import Contact from "@/components/sections/Contact";
-import Footer from "@/components/sections/Footer";
+
+// Lazy load de componentes abaixo da dobra
+const About = dynamic(() => import("@/components/sections/About"), {
+  loading: () => <div className="min-h-screen flex items-center justify-center">Carregando...</div>
+});
+const Services = dynamic(() => import("@/components/sections/Services"));
+const Portfolio = dynamic(() => import("@/components/sections/Portfolio"));
+const Reviews = dynamic(() => import("@/components/sections/Reviews"));
+const FAQ = dynamic(() => import("@/components/sections/FAQ"));
+const Contact = dynamic(() => import("@/components/sections/Contact"));
+const Footer = dynamic(() => import("@/components/sections/Footer"));
 
 export default function Home() {
   return (
