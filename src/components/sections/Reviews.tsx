@@ -61,7 +61,7 @@ export default function Reviews() {
 
   return (
     <section id="avaliacoes" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+      <div className="inline-flex flex-col sm:flex-row items-center bg-white rounded-2xl shadow-lg px-4 sm:px-8 py-4 sm:py-6 border-2 border-primary-100 max-w-full">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center mb-16">
           <div className="inline-block bg-secondary-100 text-secondary-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">Avaliações</div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">O Que Nossos <span className="text-primary-700">Clientes Dizem</span></h2>

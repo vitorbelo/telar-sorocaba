@@ -34,7 +34,7 @@ export default function Hero() {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Segurança e{" "}
               <span className="text-primary-700">Tranquilidade</span>
               <br />
@@ -43,14 +43,14 @@ export default function Hero() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
               Redes de proteção de alta qualidade com instalação profissional
               em Sorocaba e região. Proteja quem você ama com quem entende do
               assunto.
             </p>
 
             {/* Features List */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
               {[
                 "Instalação Rápida",
                 "Materiais Certificados",
@@ -65,24 +65,24 @@ export default function Hero() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contato">
+            <div className="flex flex-col gap-3 sm:gap-4 w-full">
+              <a href="#contato" className="w-full">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-secondary-500 hover:bg-secondary-600 text-white text-lg px-8 py-6"
+                  className="w-full bg-secondary-500 hover:bg-secondary-600 text-white text-base sm:text-lg px-6 py-5 sm:py-6"
                 >
-                  <Phone className="w-5 h-5 mr-2" />
+                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Solicitar Orçamento Grátis
                 </Button>
               </a>
-              <a href="#trabalhos">
+              <a href="#trabalhos" className="w-full">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto border-2 border-primary-600 text-primary-700 hover:bg-primary-50 text-lg px-8 py-6"
+                  className="w-full border-2 border-primary-600 text-primary-700 hover:bg-primary-50 text-base sm:text-lg px-6 py-5 sm:py-6"
                 >
                   Ver Trabalhos Realizados
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
                 </Button>
               </a>
             </div>

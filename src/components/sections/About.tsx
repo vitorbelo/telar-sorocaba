@@ -47,9 +47,9 @@ export default function About() {
             </div>
 
             {/* Decorative badge */}
-            <div className="absolute -bottom-6 -right-6 bg-secondary-500 text-white rounded-2xl p-6 shadow-xl">
-              <p className="text-4xl font-bold">10+</p>
-              <p className="text-sm">Anos no mercado</p>
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 bg-secondary-500 text-white rounded-2xl p-4 sm:p-6 shadow-xl max-w-[120px] sm:max-w-none">
+              <p className="text-2xl sm:text-4xl font-bold">10+</p>
+              <p className="text-xs sm:text-sm">Anos no mercado</p>
             </div>
           </motion.div>
 
