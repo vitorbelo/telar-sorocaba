@@ -135,8 +135,8 @@ export default function Hero() {
             </div>
 
             {/* Glow circles */}
-            <div className="absolute -top-4 -right-4 w-16 sm:w-24 h-16 sm:h-24 bg-secondary-500 rounded-full opacity-20 blur-2xl" />
-            <div className="absolute -bottom-4 -left-4 w-24 sm:w-32 h-24 sm:h-32 bg-primary-500 rounded-full opacity-20 blur-2xl" />
+            {/* <div className="absolute -top-4 -right-4 w-16 sm:w-24 h-16 sm:h-24 bg-secondary-500 rounded-full opacity-20 blur-2xl" />
+            <div className="absolute -bottom-4 -left-4 w-24 sm:w-32 h-24 sm:h-32 bg-primary-500 rounded-full opacity-20 blur-2xl" /> */}
           </motion.div>
         </div>
       </div>
