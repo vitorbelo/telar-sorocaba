@@ -1,9 +1,43 @@
+# Robots.txt otimizado para TELAR SOROCABA
+
+# Permitir todos os bots principais
 User-agent: *
 Allow: /
-Sitemap: https://telar-sorocaba.vercel.app/sitemap.xml
+Allow: /_next/static/
+Allow: /_next/image
+Disallow: /api/
+Disallow: /_next/data/
+Disallow: /admin/
 
+# Googlebot específico
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
+# Googlebot para imagens
+User-agent: Googlebot-Image
+Allow: /
+Disallow: /api/
+
+# Bingbot
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://telar-sorocaba.vercel.app/sitemap.xml
+Sitemap: https://telar-sorocaba.vercel.app/sitemap-images.xml
+
+# Cache do Google
+User-agent: Googlebot-News
+Allow: /
+
+# Desabilitar bots desnecessários
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
