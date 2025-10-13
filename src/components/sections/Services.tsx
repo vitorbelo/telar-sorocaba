@@ -41,13 +41,14 @@ export default function Services() {
         "Soluções completas de proteção para residências, incluindo varandas, escadas e áreas de risco.",
       color: "from-purple-500 to-purple-600",
     },
-    {
-      icon: Bug,
-      title: "Telas Mosquiteiras",
-      description:
-        "Instalação de telas mosquiteiras para janelas e portas, mantendo insetos afastados.",
-      color: "from-orange-500 to-orange-600",
-    },
+    // ,
+    // {
+    //   icon: Bug,
+    //   title: "Telas Mosquiteiras",
+    //   description:
+    //     "Instalação de telas mosquiteiras para janelas e portas, mantendo insetos afastados.",
+    //   color: "from-orange-500 to-orange-600",
+    // },
   ];
 
   return (

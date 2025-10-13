@@ -20,7 +20,7 @@ export default function Footer() {
     "Redes para Sacadas",
     "Redes para Piscinas",
     "Redes para Quadras",
-    "Telas Mosquiteiras",
+    // "Telas Mosquiteiras",
     "Proteção Residencial",
   ];
 
@@ -113,7 +113,7 @@ export default function Footer() {
               © {currentYear} TELAR SOROCABA. Todos os direitos reservados.
             </p>
             <p className="text-gray-400 text-sm text-center md:text-right">
-              Desenvolvido com ❤️ por <a href="http://vabweb.com.br/" target="_blank" className="text-secondary-500 font-semibold ">VAB WEB /&gt;</a>
+              Desenvolvido por <a href="http://vabweb.com.br/" target="_blank" className="text-secondary-500 font-semibold ">VAB WEB /&gt;</a>
             </p>
           </div>
         </div>

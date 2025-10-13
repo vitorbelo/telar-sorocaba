@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: 'TELAR SOROCABA',
     images: [
       {
-        url: '/logo-telar.png',
+        url: '/logo-telar.jpg',
         width: 1200,
         height: 630,
         alt: 'TELAR SOROCABA - Redes de Proteção',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'TELAR SOROCABA - Redes de Proteção',
     description: 'Especialistas em redes de proteção em Sorocaba. 10 anos de experiência. Orçamento grátis!',
-    images: ['/logo-telar.png'],
+    images: ['/logo-telar.jpg'],
   },
   verification: {
     google: 'seu-codigo-google-search-console-aqui',
@@ -90,7 +90,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo-telar.png" />
+        <link rel="apple-touch-icon" href="/logo-telar.jpg" />
         
         {/* JSON-LD Structured Data */}
         <script
@@ -100,7 +100,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "TELAR SOROCABA",
-              "image": "https://telar-sorocaba.vercel.app/logo-telar.png",
+              "image": "https://telar-sorocaba.vercel.app/logo-telar.jpg",
               "description": "Especialistas em redes de proteção em Sorocaba e região com 10 anos de experiência",
               "address": {
                 "@type": "PostalAddress",

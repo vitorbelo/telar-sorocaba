@@ -128,7 +128,7 @@ export default function Contact() {
                     <option value="Redes para Sacadas">Redes para Sacadas</option>
                     <option value="Redes para Piscinas">Redes para Piscinas</option>
                     <option value="Redes para Quadras">Redes para Quadras</option>
-                    <option value="Telas Mosquiteiras">Telas Mosquiteiras</option>
+                    {/* <option value="Telas Mosquiteiras">Telas Mosquiteiras</option> */}
                     <option value="Outro">Outro</option>
                   </select>
                 </div>

@@ -7,7 +7,7 @@ export default function About() {
   const stats = [
     {
       icon: Users,
-      value: "500+",
+      value: "7000+",
       label: "Clientes Satisfeitos",
     },
     {
