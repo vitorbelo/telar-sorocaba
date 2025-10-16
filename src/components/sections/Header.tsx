@@ -23,6 +23,7 @@ export default function Header() {
     { label: "Serviços", href: "#servicos" },
     { label: "Trabalhos", href: "#trabalhos" },
     { label: "Avaliações", href: "#avaliacoes" },
+    { label: "Instagram", href: "#instagram" },
     { label: "Contato", href: "#contato" },
   ];
 
