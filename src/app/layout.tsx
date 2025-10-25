@@ -14,11 +14,11 @@ const organizationSchema = {
   "@type": "LocalBusiness",
   "name": "TELAR SOROCABA - Redes de Proteção",
   "image": [
-    "https://telar-sorocaba.vercel.app/logo-telar.jpg",
-    "https://telar-sorocaba.vercel.app/telar-casa.png"
+    "https://telarsorocaba.com.br/logo-telar.jpg",
+    "https://telarsorocaba.com.br/telar-casa.png"
   ],
-  "@id": "https://telar-sorocaba.vercel.app",
-  "url": "https://telar-sorocaba.vercel.app",
+  "@id": "https://telarsorocaba.com.br",
+  "url": "https://telarsorocaba.com.br",
   "telephone": "+5515991676761",
   "priceRange": "$$",
   "address": {
@@ -135,25 +135,25 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 1,
       "name": "Início",
-      "item": "https://telar-sorocaba.vercel.app"
+      "item": "https://telarsorocaba.com.br"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Sobre",
-      "item": "https://telar-sorocaba.vercel.app/#sobre"
+      "item": "https://telarsorocaba.com.br/#sobre"
     },
     {
       "@type": "ListItem",
       "position": 3,
       "name": "Serviços",
-      "item": "https://telar-sorocaba.vercel.app/#servicos"
+      "item": "https://telarsorocaba.com.br/#servicos"
     },
     {
       "@type": "ListItem",
       "position": 4,
       "name": "Contato",
-      "item": "https://telar-sorocaba.vercel.app/#contato"
+      "item": "https://telarsorocaba.com.br/#contato"
     }
   ]
 };
@@ -190,45 +190,36 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://telar-sorocaba.vercel.app'),
+  metadataBase: new URL('https://telarsorocaba.com.br'),
   title: {
     default: "TELAR SOROCABA - Redes de Proteção | Instalação Profissional em Sorocaba e Região",
     template: "%s | TELAR SOROCABA"
   },
   description: "★ Especialistas em redes de proteção em Sorocaba ★ 10 anos de experiência ★ Instalação profissional ★ Materiais certificados ★ Orçamento grátis! ☎ (15) 9 9167-6761",
   keywords: [
-    // Keywords principais
     "redes de proteção sorocaba",
     "rede de proteção sorocaba",
     "tela de proteção sorocaba",
     "instalação rede proteção sorocaba",
-    
-    // Long-tail keywords
     "rede de proteção para janela sorocaba",
     "rede de proteção para sacada sorocaba",
     "rede de proteção para piscina sorocaba",
     "rede de proteção para gatos sorocaba",
     "rede de proteção para crianças sorocaba",
-    
-    // Serviços específicos
     "instalador de rede de proteção sorocaba",
     "empresa de rede de proteção sorocaba",
     "rede de segurança sorocaba",
     "telar sorocaba",
-    
-    // Localização
     "rede proteção votorantim",
     "rede proteção salto pirapora",
     "rede proteção piedade",
     "rede proteção ibiúna",
-    
-    // Variações
     "tela janela sorocaba",
     "tela sacada sorocaba",
     "proteção janela apartamento",
     "rede anti queda",
   ],
-  authors: [{ name: "TELAR SOROCABA", url: "https://telar-sorocaba.vercel.app" }],
+  authors: [{ name: "TELAR SOROCABA", url: "https://telarsorocaba.com.br" }],
   creator: "TELAR SOROCABA",
   publisher: "TELAR SOROCABA",
   formatDetection: {
@@ -250,7 +241,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://telar-sorocaba.vercel.app',
+    url: 'https://telarsorocaba.com.br',
     siteName: 'TELAR SOROCABA',
     title: '🛡️ TELAR SOROCABA - Redes de Proteção em Sorocaba | Orçamento Grátis',
     description: '★ 10 anos protegendo famílias ★ Instalação profissional ★ Materiais certificados ★ Atendimento em Sorocaba e região ★ Ligue: (15) 9 9167-6761',
@@ -279,15 +270,12 @@ export const metadata: Metadata = {
     creator: '@telarsorocaba',
   },
   verification: {
-    google: 'seu-codigo-google-search-console-aqui',
-    // Adicione também:
-    // yandex: 'seu-codigo-yandex',
-    // bing: 'seu-codigo-bing',
+    google: 'wvVPragUogVN465x1iSO1SDCFUL5CClGlANJY8AYUAc',
   },
   alternates: {
-    canonical: 'https://telar-sorocaba.vercel.app',
+    canonical: 'https://telarsorocaba.com.br',
     languages: {
-      'pt-BR': 'https://telar-sorocaba.vercel.app',
+      'pt-BR': 'https://telarsorocaba.com.br',
     },
   },
   category: 'Serviços',
@@ -307,28 +295,25 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={inter.variable}>
       <head>
-        {/* Preconnect para melhor performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         
         {/* Favicons */}
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/logo-telar.jpg" />
+        <link rel="icon" type="image/png" href="/lt.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/lt.png" />
+        <link rel="shortcut icon" href="/lt.png" />
         <link rel="manifest" href="/manifest.json" />
         
-        {/* Theme Color */}
         <meta name="theme-color" content="#1e40af" />
         <meta name="msapplication-TileColor" content="#1e40af" />
         
-        {/* Geo Tags */}
         <meta name="geo.region" content="BR-SP" />
         <meta name="geo.placename" content="Sorocaba" />
         <meta name="geo.position" content="-23.5015;-47.4526" />
         <meta name="ICBM" content="-23.5015, -47.4526" />
         
-        {/* JSON-LD Schema - Organization */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -336,7 +321,6 @@ export default function RootLayout({
           }}
         />
         
-        {/* JSON-LD Schema - Breadcrumb */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -344,7 +328,6 @@ export default function RootLayout({
           }}
         />
         
-        {/* JSON-LD Schema - FAQ */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -353,7 +336,6 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* Schema.org para Article (opcional) */}
         <article itemScope itemType="https://schema.org/Article" style={{ display: 'none' }}>
           <meta itemProp="headline" content="Redes de Proteção em Sorocaba - TELAR SOROCABA" />
           <meta itemProp="description" content="Especialistas em instalação de redes de proteção em Sorocaba e região" />
